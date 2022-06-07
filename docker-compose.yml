@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  kafka-client:
+    image: golang:1.18
+    container_name: kafka-client
+    tty: true
+    restart: 'always'
+    volumes:
+      - ./:/app
+    env_file:
+      - .env
+    privileged: true
+    entrypoint: sh
+    working_dir: /app
+    command: '-c "sleep 1d"'

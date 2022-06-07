@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/liu-willow/message-client/kafka/segmentio"
 	"github.com/segmentio/kafka-go"
 	"log"
-	"message-client/kafka/segmentio"
 	"os"
 	"os/signal"
 	"syscall"

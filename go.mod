@@ -1,4 +1,4 @@
-module message-client
+module github.com/liu-willow/message-client
 
 go 1.18
 
